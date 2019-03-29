@@ -1,0 +1,33 @@
+import time
+import webbrowser
+print("start time="+time.ctime())
+def intime():
+  t=int(input("Enter whether you want to enter the time in hours or in seconds,Enter 1 hor hours input and 2 for seconds and 3 for minutes "))
+  if t==1:
+   time=input("Enter hrs")
+   time=time*60*60
+   return time;
+  elif t==3:
+   (int(input("Enter minutes")))
+   time=t*60
+   return time;
+  elif t==2:
+   time=int(input("Enter seconds"))
+   return time;
+  else:
+   print("You did not enter a valid response")
+   intime()
+n=(int(input("Enter the intervals of the break you wish to take")))#no. of times of execution
+l1=["https://www.youtube.com/watch?v=V15BYnSr0P8","https://www.youtube.com/watch?v=V15BYnSr0P8","https://www.youtube.com/watch?v=V15BYnSr0P8","https://www.youtube.com/watch?v=V15BYnSr0P8"]
+l=len(l1)
+i=0
+j=0
+x=intime()
+while i <= n:
+ print("start time=" + time.ctime())
+ time.sleep(x)
+ print("time now=" + time.ctime())
+ if j<l:
+  webbrowser.open(l1[j])
+  j=+1
+  i=+1
