@@ -29,5 +29,5 @@ while i <= n:
  print("time now=" + time.ctime())
  if j<l:
   webbrowser.open(l1[j])
-  j=+1
-  i=+1
+  j+=1
+  i+=1
